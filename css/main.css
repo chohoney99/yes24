@@ -1,0 +1,238 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+#wrap {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+}
+
+#headertop {
+  width: 100%;
+  height: 38px;
+  background-color: #0080ff;
+}
+
+#headertopwrap {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#leftnav ul {
+  display: flex;
+}
+
+#leftnav ul li a {
+  color: #fff;
+  font-family: "맑은 고딕";
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 38px;
+  letter-spacing: -1px;
+  padding: 0 7px;
+}
+
+#rightnav > ul {
+  display: flex;
+}
+
+#rightnav > ul li a {
+  color: #fff;
+  font-family: "돋움";
+  font-size: 11px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  padding: 1px 4px 0px;
+}
+
+#rightnav img {
+  margin: 0 0 1px 2px;
+}
+
+.mypagebox {
+  position: absolute;
+  top: 7px;
+  display: flex;
+  color: #666;
+  width: 70px;
+  border: 1px solid #0080ff;
+  z-index: 10;
+  background-color: #fff;
+  font-size: 11px;
+}
+
+.mypagebox ul li {
+  padding: 0 !important;
+}
+
+.mypagebox ul li a {
+  color: #666 !important;
+  line-height: 25px !important;
+}
+
+#headermid {
+  width: 100%;
+  height: 112px;
+}
+
+#headermidwrap {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  width: 265px;
+  height: 103px;
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  width: 520px;
+  height: 52px;
+  border: solid 2px #0080ff;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+
+.searchbar {
+  width: 430px;
+  height: 100%;
+  margin-left: 17px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  border: none;
+  position: absolute;
+}
+
+.searchbar::placeholder {
+  color: #000;
+}
+
+.searchbar:focus {
+  outline: none;
+}
+
+.searchbtn {
+  width: 60px;
+  height: 100%;
+  border: none;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+#headerbanner {
+  width: 180px;
+  height: 112px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#headerbanner img {
+  width: 100%;
+  height: 100%;
+}
+
+#headerbanner li:not(:first-child) {
+  display: none;
+}
+
+#buttonbox {
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+}
+
+#buttonbox button {
+  border: 0;
+  height: 16px;
+  margin: -3px;
+  cursor: pointer;
+}
+
+#headerbot {
+  width: 100%;
+  height: 45px;
+  border-top: 1px solid #eee;
+  border-bottom: 2px solid #0080ff;
+}
+
+#headerbotwrap {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#mainnav ul {
+  display: flex;
+  height: 43px;
+}
+
+#mainnav ul li {
+  font-family: "맑은 고딕";
+  font-size: 13px;
+  font-weight: bold;
+  padding: 0 6px;
+  height: 100%;
+  line-height: 40px;
+}
+
+#mainnav ul li:nth-of-type(1) {
+  background-color: #0080ff;
+  width: 109px;
+  text-align: center;
+  margin-right: 6px;
+}
+
+#mainnav ul li:nth-of-type(1) a {
+  color: #fff;
+}
+
+.blue a {
+  color: #0080ff;
+}
+
+#subnav ul {
+  display: flex;
+  height: 43px;
+}
+
+#subnav ul li {
+  font-family: "맑은 고딕";
+  font-size: 13px;
+  padding: 0 6px;
+  height: 100%;
+  line-height: 40px;
+}
+
+#subnav ul li a {
+  color: #666;
+}
