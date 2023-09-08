@@ -299,7 +299,7 @@ header {
   font-weight: normal;
 }
 
-.listboxlist li:hover a {
+.listboxlist li a:hover {
   text-decoration: underline;
 }
 
