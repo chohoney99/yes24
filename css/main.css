@@ -656,6 +656,10 @@ footer {
   color: #fff;
 }
 
+.contents1box2img img {
+  cursor: pointer;
+}
+
 .contents1box2img img:not(:first-of-type) {
   display: none;
 }
@@ -974,9 +978,15 @@ footer {
 }
 
 #slider {
-  width: 1903px;
-  margin-top: 20px;
+  width: 100%;
+  margin: 20px auto 0;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+#slider img {
+  width: 100%;
 }
 
 #contents4 {

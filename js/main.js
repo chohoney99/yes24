@@ -23,6 +23,26 @@ $(".contents1box2 ul:nth-of-type(2) li:nth-of-type(2)").hover(function(){
     $(".contents1box2img img:not(:nth-of-type(2))").hide();
     $(".contents1box2img img:nth-of-type(2)").show();
 });
+$(".contents1box2 ul:nth-of-type(2) li:nth-of-type(3)").hover(function(){
+    $(".contents1box2img img:not(:nth-of-type(3))").hide();
+    $(".contents1box2img img:nth-of-type(3)").show();
+});
+$(".contents1box2 ul:nth-of-type(2) li:nth-of-type(4)").hover(function(){
+    $(".contents1box2img img:not(:nth-of-type(4))").hide();
+    $(".contents1box2img img:nth-of-type(4)").show();
+});
+$(".contents1box2 ul:nth-of-type(2) li:nth-of-type(5)").hover(function(){
+    $(".contents1box2img img:not(:nth-of-type(5))").hide();
+    $(".contents1box2img img:nth-of-type(5)").show();
+});
+$(".contents1box2 ul:nth-of-type(2) li:nth-of-type(6)").hover(function(){
+    $(".contents1box2img img:not(:nth-of-type(6))").hide();
+    $(".contents1box2img img:nth-of-type(6)").show();
+});
+$(".contents1box2 ul:nth-of-type(2) li:nth-of-type(7)").hover(function(){
+    $(".contents1box2img img:not(:nth-of-type(7))").hide();
+    $(".contents1box2img img:nth-of-type(7)").show();
+});
 
 $.ajax({
     method: "GET",

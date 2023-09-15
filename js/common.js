@@ -1,3 +1,10 @@
+$(".searchbar").focusin(function(){
+    $(this).val("");
+}).focusout(function(){
+    $(this).val(`삼프로 김동환 "부의 새 물줄기를 설명한 책"`);
+});
+
+
 $(".mypage").mouseover(function(){
     $(".mypagebox").show();
 });
