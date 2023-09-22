@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시간과 장의사 - 예스24</title>
+    <link rel="stylesheet" href="css/sub.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div id="headerwrap">
+            <div id="headertop">
+                <div id="headertopwrap">
+                    <div id="leftnav">
+                        <ul>
+                            <li><a href="#">국내도서</a></li>
+                            <li><a href="#">외국도서</a></li>
+                            <li><a href="#">중고샵</a></li>
+                            <li><a href="#">eBook</a></li>
+                            <li><a href="#">크레마클럽</a></li>
+                            <li><a href="#">CD/LP</a></li>
+                            <li><a href="#">DVD/BD</a></li>
+                            <li><a href="#">문구/GIFT</a></li>
+                            <li><a href="#">티켓</a></li>
+                        </ul>
+                    </div>
+                    <div id="rightnav">
+                        <ul>
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                            <li class="mypage"><a href="#">마이페이지<img src="img/show.png" alt=""></a>
+                                <div class="mypagebox">
+                                    <ul>
+                                        <li><a href="#">마이페이지<img src="img/hide.png" alt=""></a></li>
+                                        <li><a href="#">주문내역</a></li>
+                                        <li><a href="#">마이리스트</a></li>
+                                        <li><a href="#">YES포인트</a></li>
+                                        <li><a href="#">YES머니</a></li>
+                                        <li><a href="#">YES상품권</a></li>
+                                        <li><a href="#">쿠폰</a></li>
+                                        <li><a href="#">회원정보</a></li>
+                                    </ul>
+                                </div></li>
+                            <li><a href="#">카트</a></li>
+                            <li><a href="#">주문/배송</a></li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                    </div>
+                </div>    
+            </div>
+            <div id="headermid">
+                <div id="headermidwrap">
+                    <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+                    <div class="search">
+                        <input type="text" class="searchbar" value='삼프로 김동환 "부의 새 물줄기를 설명한 책"'>
+                        <button class="searchbtn"><img src="img/search.jpg" alt=""></button>
+                    </div>
+                    <div id="headerbanner">
+                        <ul id="bannerlist">
+                            <li><a href=""><img src="img/hmb1.jpg" alt=""></a></li>
+                            <li><a href=""><img src="img/hmb2.jpg" alt=""></a></li>
+                            <li><a href=""><img src="img/hmb3.jpg" alt=""></a></li>
+                            <li><a href=""><img src="img/hmb4.jpg" alt=""></a></li>
+                            <li><a href=""><img src="img/hmb5.jpg" alt=""></a></li>
+                        </ul>
+                        <div id="buttonbox">
+                            <button class="prev"><img src="img/prev.jpg" alt=""></button>
+                            <button class="next"><img src="img/next.jpg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="headerbot">
+                <div id="headerbotwrap">
+                    <div id="mainnav">
+                        <ul>
+                            <li id="quick"><a href="#">빠른분야찾기</a>
+                                <ul id="mainlist">
+                                    <li><a href="#">국내도서</a>
+                                        <div class="mainlistbox">
+                                            <h3><a href="#">국내도서</a></h3>
+                                            <div class="listbox">
+                                                <ul class="listboxlist">
+                                                    <li><a href="#">소설/시/희곡</a></li>
+                                                    <li><a href="#">에세이</a></li>
+                                                    <li><a href="#">인문</a></li>
+                                                    <li><a href="#">역사</a></li>
+                                                    <li><a href="#">예술</a></li>
+                                                    <li><a href="#">종교</a></li>
+                                                    <li><a href="#">사회 정치</a></li>
+                                                    <li><a href="#">자연과학</a></li>
+                                                    <li><a href="#">경제 경영</a></li>
+                                                    <li><a href="#">자기계발</a></li>
+                                                    <li><a href="#">인물</a></li>
+                                                    <li><a href="#">유아</a></li>
+                                                    <li><a href="#">어린이</a></li>
+                                                    <li><a href="#">청소년</a></li>
+                                                    <li><a href="#">전집</a></li>
+                                                </ul>
+                                                <hr>
+                                                <ul class="listboxlist">
+                                                    <li><a href="#">만화</a></li>
+                                                    <li><a href="#">라이트노벨</a></li>
+                                                    <li><a href="#">여행</a></li>
+                                                    <li><a href="#">요리</a></li>
+                                                    <li><a href="#">육아</a></li>
+                                                    <li><a href="#">가정 살림</a></li>
+                                                    <li><a href="#">건강 취미</a></li>
+                                                    <li><a href="#">잡지</a></li>
+                                                    <li><a href="#">대학교재</a></li>
+                                                    <li><a href="#">국어 외국어 사전</a></li>
+                                                    <li><a href="#">IT 모바일</a></li>
+                                                    <li><a href="#">공무원</a></li>
+                                                    <li><a href="#">수험서 자격증</a></li>
+                                                    <li><a href="#">초등참고서</a></li>
+                                                    <li><a href="#">중고등 참고서</a></li>
+                                                    <li><a href="#">EBS교재</a></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#"><img src="img/mli1.png" alt=""></a>
+                                        </div></li>
+                                    <li><a href="#">외국도서</a>
+                                        <div class="mainlistbox">
+                                            <h3><a href="#">외국도서</a></h3>
+                                            <div class="listbox">
+                                                <ul class="listboxlist">
+                                                    <li><a href="#">ELT 사전</a></li>
+                                                    <li><a href="#">문학 소설</a></li>
+                                                    <li><a href="#">경제 경영</a></li>
+                                                    <li><a href="#">인문 사회</a></li>
+                                                    <li><a href="#">예술 대중문화</a></li>
+                                                    <li><a href="#">취미 라이프스타일</a></li>
+                                                    <li><a href="#">컴퓨터</a></li>
+                                                    <li><a href="#">자연과학</a></li>
+                                                    <li><a href="#">대학교재 전문서</a></li>
+                                                    <li><a href="#">해외잡지</a></li>
+                                                    <li><a href="#">일본도서</a></li>
+                                                    <li><a href="#">중국도서</a></li>
+                                                    <li><a href="#">프랑스도서</a></li>
+                                                </ul>
+                                                <hr>
+                                                <ul class="listboxlist">
+                                                    <li><a href="#">유아 어린이 청소년</a></li>
+                                                    <li><a href="#">캐릭터북</a></li>
+                                                    <li><a href="#">초등코스북</a></li>
+                                                    <li><a href="#">학습서</a></li>
+                                                    <li><a href="#">Lexile®</a></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#"><img src="img/mli2.png" alt=""></a>
+                                        </div></li>
+                                    <li><a href="#">중고샵</a>
+                                        <div class="mainlistbox">
+                                            <h3><a href="#">중고샵</a></h3>
+                                            <div class="listbox">
+                                                <ul class="listboxlist">
+                                                    <li><a href="#">중고 국내도서</a></li>
+                                                    <li><a href="#">중고 외국도서</a></li>
+                                                    <li><a href="#">직배송 중고도서</a></li>
+                                                    <li><a href="#">중고 음반</a></li>
+                                                    <li><a href="#">중고 DVD</a></li>
+                                                    <li><a href="#">바이백(중고팔기)</a></li>
+                                                    <li><a href="#">중고매장</a></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#"><img src="img/mli3.png" alt=""></a>
+                                        </div></li>
+                                    <li><a href="#">eBook</a>
+                                        <div class="mainlistbox">
+                                            <h3><a href="#">eBook</a></h3>
+                                            <div class="listbox">
+                                                <ul class="listboxlist">
+                                                    <li><a href="#">로맨스</a></li>
+                                                    <li><a href="#">BL</a></li>
+                                                    <li><a href="#">만화</a></li>
+                                                    <li><a href="#">소설</a></li>
+                                                    <li><a href="#">경제 경영</a></li>
+                                                    <li><a href="#">라이트노벨</a></li>
+                                                    <li><a href="#">판타지/무협</a></li>
+                                                    <li><a href="#">에세이 시</a></li>
+                                                    <li><a href="#">인문</a></li>
+                                                    <li><a href="#">사회 정치</a></li>
+                                                    <li><a href="#">자기계발</a></li>
+                                                    <li><a href="#">역사</a></li>
+                                                    <li><a href="#">종교</a></li>
+                                                    <li><a href="#">예술 대중문화</a></li>
+                                                    <li><a href="#">자연과학</a></li>
+                                                </ul>
+                                                <hr>
+                                                <ul class="listboxlist">
+                                                    <li><a href="#">가정 살림</a></li>
+                                                    <li><a href="#">건강 취미 여행</a></li>
+                                                    <li><a href="#">어린이 유아</a></li>
+                                                    <li><a href="#">청소년</a></li>
+                                                    <li><a href="#">국어 외국어</a></li>
+                                                    <li><a href="#">IT 모바일</a></li>
+                                                    <li><a href="#">대학교재</a></li>
+                                                    <li><a href="#">수험서 자격증</a></li>
+                                                    <li><a href="#">잡지</a></li>
+                                                    <li><a href="#">해외원서</a></li>
+                                                    <li><a href="#">오디오북</a></li>
+                                                    <li><a href="#">무료eBook</a></li>
+                                                    <li><a href="#">eBook 리더기</a></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#"><img src="img/mli4.png" alt=""></a>
+                                        </div></li>
+                                    <li><a href="#">크레마클럽</a>
+                                        <div class="mainlistbox">
+                                            <h3><a href="#">크레마클럽</a></h3>
+                                            <div class="listbox">
+                                                <ul class="listboxlist">
+                                                    <li><a href="#">YES24 ORIGINAL</a></li>
+                                                    <li><a href="#">소설</a> | <a href="#">에세이 시</a></li>
+                                                    <li><a href="#">경제 경영</a></li>
+                                                    <li><a href="#">자기계발</a></li>
+                                                    <li><a href="#">인문</a> | <a href="#">사회 정치</a></li>
+                                                    <li><a href="#">역사</a> | <a href="#">종교</a></li>
+                                                    <li><a href="#">예술 대중문화</a></li>
+                                                    <li><a href="#">자연과학</a></li>
+                                                    <li><a href="#">가정 살림</a></li>
+                                                    <li><a href="#">건강 취미 여행</a></li>
+                                                    <li><a href="#">어린이 유아</a> | <a href="#">청소년</a></li>
+                                                    <li><a href="#">국어 외국어</a></li>
+                                                    <li><a href="#">IT 모바일</a></li>
+                                                    <li><a href="#">대학교재</a></li>
+                                                    <li><a href="#">잡지</a> | <a href="#">만화</a></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#"><img src="img/mli5.png" alt=""></a>
+                                        </div></li>
+                                    <li><a href="#">CD/LP</a>
+                                        <div class="mainlistbox">
+                                            <h3><a href="#">CD/LP</a></h3>
+                                            <div class="listbox">
+                                                <ul class="listboxlist">
+                                                    <li><a href="#">가요</a></li>
+                                                    <li><a href="#">클래식</a></li>
+                                                    <li><a href="#">POP</a></li>
+                                                    <li><a href="#">ROCK</a></li>
+                                                    <li><a href="#">재즈</a></li>
+                                                    <li><a href="#">OST</a></li>
+                                                    <li><a href="#">뮤직 DVD</a></li>
+                                                    <li><a href="#">뮤직 블루레이</a></li>
+                                                    <li><a href="#">유아/어린이/명상</a></li>
+                                                    <li><a href="#">뉴에이지</a></li>
+                                                    <li><a href="#">종교음악</a></li>
+                                                    <li><a href="#">국악</a></li>
+                                                    <li><a href="#">일본음악</a></li>
+                                                    <li><a href="#">월드뮤직</a></li>
+                                                    <li><a href="#">예약음반</a></li>
+                                                </ul>
+                                                <hr>
+                                                <ul class="listboxlist">
+                                                    <li><a href="#">중고음반</a></li>
+                                                    <li><a href="#">스타샵</a></li>
+                                                    <li><a href="#">해외 구매</a></li>
+                                                    <li><a href="#">LP(Vinyl)샵</a></li>
+                                                    <li><a href="#">스페셜샵</a></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#"><img src="img/mli6.png" alt=""></a>
+                                        </div></li>
+                                    <li><a href="#">DVD/BD</a>
+                                        <div class="mainlistbox">
+                                            <h3><a href="#">DVD/BD</a></h3>
+                                            <div class="listbox">
+                                                <ul class="listboxlist">
+                                                    <li><a href="#">예약판매</a></li>
+                                                    <li><a href="#">스틸북샵</a></li>
+                                                    <li><a href="#">예스24 단독판매</a></li>
+                                                    <li><a href="#">블루레이</a></li>
+                                                    <li><a href="#">애니메이션</a></li>
+                                                    <li><a href="#">액션/SF</a></li>
+                                                    <li><a href="#">드라마/코미디</a></li>
+                                                    <li><a href="#">고전/명화</a></li>
+                                                    <li><a href="#">3D 블루레이</a></li>
+                                                    <li><a href="#">다큐/교육</a></li>
+                                                    <li><a href="#">성인(19)</a></li>
+                                                    <li><a href="#">뮤직DVD</a></li>
+                                                    <li><a href="#">국내외 TV드라마</a></li>
+                                                    <li><a href="#">비디오/VCD</a></li>
+                                                </ul>
+                                                <hr>
+                                                <ul class="listboxlist">
+                                                    <li><a href="#">독립, 인디영화</a></li>
+                                                    <li><a href="#">공포/스릴러</a></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#"><img src="img/mli7.png" alt=""></a>
+                                        </div></li>
+                                    <li><a href="#">문구/GIFT</a>
+                                        <div class="mainlistbox">
+                                            <h3><a href="#">문구/GIFT</a></h3>
+                                            <div class="listbox">
+                                                <ul class="listboxlist">
+                                                    <li><a href="#">예스굿즈</a></li>
+                                                    <li><a href="#">디자인문구</a></li>
+                                                    <li><a href="#">학습/독서</a></li>
+                                                    <li><a href="#">디지털</a></li>
+                                                    <li><a href="#">리빙</a></li>
+                                                    <li><a href="#">취미/여행</a></li>
+                                                    <li><a href="#">유아동</a></li>
+                                                    <li><a href="#">패션잡화</a></li>
+                                                    <li><a href="#">반려동물</a></li>
+                                                    <li><a href="#">1인샵</a></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#"><img src="img/mli8.png" alt=""></a>
+                                        </div></li>
+                                    <li><a href="#">티켓</a>
+                                        <div class="mainlistbox">
+                                            <h3><a href="#">티켓</a></h3>
+                                            <div class="listbox">
+                                                <ul class="listboxlist">
+                                                    <li><a href="#">콘서트</a></li>
+                                                    <li><a href="#">뮤지컬</a></li>
+                                                    <li><a href="#">연극</a></li>
+                                                    <li><a href="#">클래식/무용/국악</a></li>
+                                                    <li><a href="#">전시/행사</a></li>
+                                                    <li><a href="#">가족/아동</a></li>
+                                                </ul>
+                                            </div>
+                                            <a href=""><img src="img/mli9.png" alt=""></a>
+                                        </div></li>
+                                </ul></li>
+                            <li class="blue"><a href="#">베스트</a></li>
+                            <li class="blue"><a href="#">신상품</a></li>
+                            <li class="blue"><a href="#">이벤트</a></li>
+                            <li class="blue"><a href="#">바이백</a></li>
+                            <li class="blue"><a href="#">매장안내</a></li>
+                            <li>|</li>
+                            <li><a href="#">채널예스</a></li>
+                            <li><a href="#">블로그</a></li>
+                            <li><a href="#">예스펀딩</a></li>
+                            <li><a href="#">브랜드스토리</a></li>
+                        </ul>
+                    </div>
+                    <div id="subnav">
+                        <ul>
+                            <li><a href="#">예사단독판매</a></li>
+                            <li><a href="#">이달의사은품</a></li>
+                            <li><a href="#">특가할인</a></li>
+                            <li><a href="#">추천도서</a></li>
+                            <li><a href="#">대량/법인</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="topbanner">
+        <a href="#"><img src="img/topbanner.png" alt=""></a>
+    </div>
+    <div id="category">
+        <p><a href="#">국내도서</a> > <a href="#">소설/시/희곡</a> > <a href="#">한국소설</a> > <a href="#">한국 단편소설</a></p>
+    </div>
+    <div id="contents1">
+        <div id="thumbnail"></div>
+        <div id="main">
+            <p class="p1"><span>소득공제</span> 이묵돌 단편선-01</p>
+            <h2>시간과 장의사</h2>
+            <p class="p2">이묵돌 저 &nbsp;<span>|</span>&nbsp; 냉수 &nbsp;<span>|</span>&nbsp; 2020년 03월 30일</p>
+            <div id="score">
+                <img src="img/score.png" alt="">
+                <span class="s1">9.0</span>&nbsp;&nbsp;
+                <span><a href="#">회원리뷰(4건)</a> | 판매지수 330</span>&nbsp;&nbsp;
+                <span class="s2">베스트</span>
+                <span>소설/시/희곡 top100 2주</span>
+            </div>
+            <div id="mainbox">
+                <div id="mainleft">
+                    <table id="price">
+                        <tr>
+                            <th>정가</th>
+                            <td>18,800원</td>
+                        </tr>
+                        <tr>
+                            <th><b>판매가</b></th>
+                            <td class="red"><span>16,920</span>원 (10% 할인)</td>
+                        </tr>
+                        <tr>
+                            <th>YES포인트</th>
+                            <td>
+                                180원 (1% 적립)<br>
+                                5만원 이상 구매 시 2천원 추가 적립
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="t1">결제혜택</th>
+                            <td>카드/간편결제 혜택을 확인하세요</td>
+                        </tr>
+                        <tr>
+                            <th class="t1">배송안내</th>
+                            <td>서울특별시 영등포구 은행로 11(여의도동,일신빌딩) <span><a href="#">지역변경</a></span></td>
+                        </tr>
+                    </table>
+                    <div id="ship">
+                        <p><span class="box">일반배송</span>&nbsp; <b><u>2일 이내(9/22, 금)</u></b> 출고예정</p>
+                    </div>
+                    <br><p>배송비 : 무료</p>
+                    <div id="used">
+                        <a href="#"><p>이미 소장하고 있다면 <span>3,800원</span>에 판매해 보세요!</p></a>
+                    </div>
+                </div>
+                <div id="mainright">
+                    <h5>판매중</h5><br>
+                    <div id="order"><span>수량</span> <button class="m">-</button><input id="a" type="text" value="1"><button class="p">+</button></div>
+                    <button>카트에 넣기</button><br>
+                    <button>바로구매</button>
+                    <hr>
+                    <ul>
+                        <li>해외배송 가능</li>
+                        <li>최저가 보상</li>
+                        <li>문화비소득공제 신청가능</li>
+                    </ul>
+                    <button>리스트에 넣기</button>
+                    <button>시리즈 알림신청</button>
+                    <button>eBook 출간 알림신청</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="navwrap">
+        <div id="nav">
+            <ul>
+                <li><a href="#bookinfo">도서정보</a></li>
+                <li><a href="#review">리뷰/한줄평<span>(3/25)</span></a></li>
+                <li><a href="#shipping">배송/반품/교환</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="contentswrap">
+        <div id="bookinfo">
+            <div id="bookinfowrap">
+                <div id="bookinfoleft">
+                    <div id="product">
+                        <h3>품목정보</h3>
+                        <table>
+                            <tr>
+                                <th>발행일</th>
+                                <td>2020년 03월 30일</td>
+                            </tr>
+                            <tr>
+                                <th>쪽수, 무게, 크기</th>
+                                <td>512쪽 | 524g | 122*190*32mm</td>
+                            </tr>
+                            <tr>
+                                <th>ISBN13</th>
+                                <td>9791189680213</td>
+                            </tr>
+                            <tr>
+                                <th>ISBN10</th>
+                                <td>1189680211</td>
+                            </tr>
+                        </table>
+                        <h4>관련분류</h4>
+                        <p>카테고리 분류</p>
+                        <p>&nbsp;국내도서 > 소설/시/희곡 > 한국소설 > 한국 단편소설</p>
+                    </div>
+                    <div id="bookcontents">
+                        <h4>책소개</h4>
+                        <p>페이스북 페이지/인스타그램 “이묵돌”에서 2018년 10월부터 2019년 10월까지 써 온 단편을 책으로 공개한다. 76편의 단편을 비롯해 이 단편집에서 최초 공개하는 3편의 단편을 수록했다. 다양한 소재의 단편들이 향하는 주된 정서는 바로 ‘상실’이다. 죽음이나 이별과 같은 물리적 사건뿐 아니라 가난이나 계층의 단절 같은 심리적 요소들 역시 상실을 낳게 하는 주된 원인이 됨을 드러낸다. 이런 상실에 관한 글들을 통해 독자는 아이러니하게도 잃어버렸던 감정을 다시 떠올리게 된다. 글을 읽는 동안에는 어렴풋하게만 느껴지던 감정은 글의 말미에 붙어 있는 제목을 접했을 때 좀더 명확해진다. 이렇게 글을 다 읽은 후에 찾아오는 울림은 독자를 생각의 길로 이끈다.</p>
+                    </div>
+                    <div id="bookcontents2">
+                        <h4>목차</h4>
+                        <h5>1부, 이력서</h5>
+                        이력서 12<br>
+                        90년생의 의문사 14<br>
+                        Bittersweet 17<br>
+                        이음동의어 28<br>
+                        지각출근, 조기퇴근 35<br>
+                        나의 프로메테우스 40<br>
+                        아웃포커스 48<br>
+                        불가침조약 53<br>
+                        낙수효과 60<br>
+                        거스름 66<br>
+                        책임에 관한 첫 번째 실험 70<br>
+                        배달불가지역 75<br>
+                        사과나무 79<br>
+                        Why so serious…… 84<br>
+                        달팽이 92<br>
+                        닫힌 결말 98<br>
+                        복지병 104<br>
+                        수평적 조직 111<br>
+                        관악산의 까마귀 120<br>
+                        비눗방울 123<br>
+                        신자유주의 128<br>
+                        알바, 천국 135<br>
+                        빈곤 속의 풍요 143<br>
+                        <p class="open">펼치기</p><br><br>
+                        <h5>2부, 비가 올 땐 무슨 생각을 하나요?</h5>
+                        비가 올 땐 무슨 생각을 하나요? 148<br>
+                        인생의 낭비 152<br>
+                        귀천 157<br>
+                        비교우위론 162<br>
+                        엄마는 외계인 167<br>
+                        여왕 벌 169<br>
+                        예후 171<br>
+                        인어공주 175<br>
+                        바다가 보이는 집 183<br>
+                        가리워진 달 191<br>
+                        태풍의 눈 195<br>
+                        동백꽃 질 무렵 200<br>
+                        한가위만 같아라 205<br>
+                        연극이 끝난 후 209<br>
+                        돌아갈 수 없는 강 220<br>
+                        수원 일가족 투신자살 사건의 전말 226<br>
+                        몽유병 환자들 231<br>
+                        <br>
+                        <h5>3부, 운명의 발견</h5>
+                        운명의 발견 238<br>
+                        해바라기 243<br>
+                        무정 250<br>
+                        불평, 등 257<br>
+                        전시상황 대처요령 261<br>
+                        총알, 배송 272<br>
+                        끝나지 않는 공사 281<br>
+                        화상들 289<br>
+                        이론과 실제 294<br>
+                        유리가면 301<br>
+                        우렁각시 312<br>
+                        밀랍으로 만든 날개, 그리고 실타래 316<br>
+                        폰팔이 320<br>
+                        청출어람 326<br>
+                        역류 330<br>
+                        상향평준화 340<br>
+                        공소시효없음 343<br>
+                        금의야행 354<br>
+                        Fly Me to the Moon 359<br>
+                        합리적 불평등 367<br>
+                        ‘잠자는 숲속의 공주’로 보는 심폐소생술의 중요성 375<br>
+                        <br>
+                        <h5>4부, 시간과 장의사</h5>
+                        시간과 장의사 380<br>
+                        생명의 다리 382<br>
+                        귀찮은 변호사 385<br>
+                        우물쭈물하다가 내 이럴 줄 알았지 390<br>
+                        고양이 키우기 395<br>
+                        백색왜성 400<br>
+                        아빠의 크레파스 412<br>
+                        김순례 할머니(73) 실종 사건의 전말 417<br>
+                        선녀와 나무꾼 418<br>
+                        반송함 424<br>
+                        노스탤지어 428<br>
+                        메아리 437<br>
+                        트루 엔딩 442<br>
+                        화양연화 450<br>
+                        다음 날 457<br>
+                        <br>
+                        미공개 단편 ― 상실 3부작<br>
+                        사라진 울음 462<br>
+                        사라진 마음 476<br>
+                        사라진 것들 490<br>
+                        <br>
+                        편집후기 504<br>
+                        책에 수록된 글 목록 509<br>
+                        <p class="close">접기</p>
+                    </div>
+                    <div id="bookimage">
+                        <h4>상세 이미지</h4>
+                        <img src="img/book.jpg" alt="">
+                    </div>
+                    <div id="author">
+                        <h4>저자 소개</h4>
+                        <div id="authorbox">
+                            <div id="authorname">
+                                <div>
+                                    <h2>저 : 이묵돌 <span>(李墨乭, 김리뷰)</span></h2>
+                                </div>
+                                <div>
+                                    <button>관심작가 알림신청</button>
+                                    <button>작가 파일</button>
+                                </div>
+                            </div>
+                            <p>1994년 경상남도 창원에서 태어나 부산과 대구에서 자랐다. 현재는 서울 관악구에서 십 년째 살고 있다. 《역마》, 《시간과 장의사》, 《적색편이》와 《모두가 회전목마를 탄다》 같은 책들을 냈다. 자기소개를 더 길게 쓰던 시절도 있었는데 지금은 관뒀다. 글은 그냥 먹고살려고 쓰는 편이다.</p>
+                        </div>
+                        <h4>출판사 리뷰</h4>
+                        <p><b>“신선하다 못해 싱싱한” “활자 맛집" “완벽한 유혹자"<br>
+                            20대의 열광적인 지지를 받고 있는 작가 이묵돌의 첫 소설집<br>
+                            <br>
+                            외면해 왔던 감정을 되찾게 함으로써<br>
+                            인간다움을 향한 갈망에 답하게 하는 79편의 이야기</b></p>
+                            <br>
+                            <p>여행 에세이 『역마』로 새로운 글쟁이로 자리잡은 이묵돌이 페이스북 페이지/인스타그램 “이묵돌”에서 2018년 10월부터 2019년 10월까지 써 온 단편을 책으로 공개한다. 76편의 단편을 비롯해 이 단편집에서 최초 공개하는 3편의 단편을 수록했다.<br><br>
+
+                                작가는 일상생활이 오롯이 투영된 짧은 글들을 통해 다양한 상황 속으로 독자들을 데려간다. 대화체를 적극적으로 사용함으로써 글 속으로 들어가 있는 듯한 현장감을 부여하며, 대화체 이외에는 자주 사용하는 어휘의 범주 밖으로 확장해 나가면서 생경한 느낌을 더한다.<br><br>
+                                
+                                다양한 소재의 단편들이 향하는 주된 정서는 바로 ‘상실’이다. 죽음이나 이별과 같은 물리적 사건뿐 아니라 가난이나 계층의 단절 같은 심리적 요소들 역시 상실을 낳게 하는 주된 원인이 됨을 드러낸다. 이런 상실에 관한 글들을 통해 독자는 아이러니하게도 잃어버렸던 감정을 다시 떠올리게 된다. 글을 읽는 동안에는 어렴풋하게만 느껴지던 감정은 글의 말미에 붙어 있는 제목을 접했을 때 좀더 명확해진다. 이렇게 글을 다 읽은 후에 찾아오는 울림은 독자를 생각의 길로 이끈다.<br><br>
+                                
+                                작가가 글을 공개하기 위해 사용하는 플랫폼은 주로 페이스북과 인스타그램이다. 좋아요나 댓글 같은 SNS에서의 반응이나 그림 구매 등으로 지지를 표명하는 사람들 중 20대의 비율이 많은 듯 보인다. 심지어 최근에는 디씨인사이드에 마이너 갤러리까지 만들었다. 20대는 왜 이묵돌의 글에 열광할까?<br><br>
+                                
+                                이는 같은 시기를 살아가는 작가의 배경과 맞물려 생각할 수 있다. 지금의 20대가 경험하고 있는 일과 사랑과 고민 등이 적절히 녹아든 글을 읽으며 독자는 자신의 마음을 이해 받는다는 느낌을 갖게 된다. 한때 인플루언서로 유명했던 이묵돌도 나와 같은 생각을 하며 살고 있다는 위로와 함께 말이다.<br><br>
+                                
+                                작가는 살면서 마주하는 여러 상황 속에서 마땅히 느껴야 하는 감정들을 외면하지 말 것을 권유한다. 지금 내가 느끼는 이 기분이 정당한 것인지 스스로 확신하지 못하고 그저 억누르고 마는 우리에게 그는 느끼고 표현함으로써 인간은 더욱 인간다워진다고 말한다. 지금 당신의 마음에 울림을 주는 글은 무엇인가? 아마 그 감정이 오늘 당신에게 가장 필요한 것은 아닐까.</p>
+                    </div>
+                </div>
+                <div id="bookinforight">
+                    <div id="series">
+                        <div class="head">
+                            <h5>이묵돌 단편선</h5>
+                            <span><a href="#">더보기</a></span>
+                        </div>
+                        <div class="books">
+                            <div class="book1">
+                                <div class="book1img"></div>
+                                <div class="book1text">
+                                    <p><a href="#">적색편이</a></p>
+                                    <p>이묵돌 저</p>
+                                    <p><b>9,000원</b></p>
+                                </div>
+                            </div>
+                            <div class="book1">
+                                <div class="book1img"></div>
+                                <div class="book1text">
+                                    <p><a href="#">블루 노트</a></p>
+                                    <p>이묵돌 저</p>
+                                    <p><b>14,850원</b></p>
+                                </div>
+                            </div>
+                            <div class="book1">
+                                <div class="book1img"></div>
+                                <div class="book1text">
+                                    <p><a href="#">시간과 장의사</a></p>
+                                    <p>이묵돌 저</p>
+                                    <p><b>16,920원</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="review">
+            <div id="reviewwrap">
+                <h3>회원리뷰 <span>(3건)</span></h3>
+                <div id="review1">
+                    <p>매주 10건의 우수리뷰를 선정하여 YES포인트 3만원을 드립니다.<br>
+                        3,000원 이상 구매 후 리뷰 작성 시 <b>일반회원 300원, 마니아회원 600원</b>의 YES포인트를 드립니다.<br>
+                        (CD/LP, DVD/Blu-ray, 패션 및 판매금지 상품, 예스24 앱스토어 상품 제외) <button>리뷰/한줄평 정책 자세히 보기</button></p>
+                    <button><a href="#">리뷰 쓰기</a></button>
+                </div>
+                <div id="review2">
+                    <div class="rv">
+                        <h4>짧지만 글에 담긴 의미는 묵직한 단편들.</h4>
+                        <p>내용&nbsp; <img src="img/score5.png" alt="">&nbsp;&nbsp; 편집/디자인&nbsp; <img src="img/score5.png" alt="">&nbsp;&nbsp; | &nbsp;&nbsp;<span>지*</span>&nbsp;&nbsp; | &nbsp;&nbsp;2021-11-29</p>
+                        <br>
+                        <p class="rvtext1">
+                            [떠나온 강남대로에는 오늘도 꿈 대신 간판들이 반짝거렸다.]
+                            <br><br>
+                            여러 책들을 읽던 중에 문득 '이묵돌' 작가의 블루노트가 주었던 여운이 떠올라 다시 이묵돌의 책을 찾았다. 1년도 더 전에 구매해놓고 두번 정독한 후 보관해놨던 '시간과 장의사'에 대한 기록이 없다는 게 생각이 나 또 한번 읽게 되었다.
+                            <br><br>
+                            이 책은 내 '이묵돌'의 덕질의 시작인데, 블루노트에서와 마찬가지로 마냥 밝은 분위기는 아니다.
+                            글의 대부분의 주제가 '상실'에서 파생된 것인 만큼 우울하고 아릿한 느낌의 글이 계속된다. 그런데 보통 그런 기분이 들면 벗어나려는 생각이 들거나, 무기력함에 너덜너덜해지기 마련인데 이묵돌의 글은 '슬픈 글이니 힘을 내서 더 열심히 슬프자!' 와 같은 이상한 마음이 생긴다.
+                            우울감에 젖어있는게 수평선이 보이는 푸르른 바다 한 가운데 둥둥 떠다는 느낌이라 우울함 속에서 감정의 자유로움과 개방감을 느낄수 있어 좋다.
+                            
+                            <span class="open">더보기</span>
+                            <br>
+                            두꺼운 책이지만, 글자수가 많지만, 생각하는 시간도 길고 읽는 시간도 꽤 걸리지만 너무나 짧게 느껴지는 글이다. 읽은 김에 블루노트도 다시 읽어봐야겠다. 차기작은 언제쯤 내주시려나..
+                            <br><br>
+                            "처한 환경에서 당연히 해야 하는 것을 한 사람과, 당연히 할 수 없다고 생각되는 것을 한 건 결과가 비슷할 뿐 완전히 다른 영역에 있다고 생각하거든요."
+                            <br><br>
+                            "잘 쓰든 못 쓰든 간에, 세상에서 더 많은 슬픔을 느끼도록 태어난 사람들은 결국 글을 쓰게 돼요. 누가 읽어 주지 않더라도 계속 쓰겠죠. 설사 기계보다 못한 글이라도 계속 쓸 거예요."
+                            <br><br>
+                            "보통 슬픈 건 스스로 최선을 다하지 못했다고 생각될 때인데, 그건 아니었던 것 같거든요. 전 최선을 다했어요. 그떄도, 지금까지도."
+                            <br><br>
+                            "내가 되찾고 싶었던 것은 소현이의 마음이 아니라, 누군가를 그토록 사랑해 마지않던 내 자신이었다."
+                            <br><br>
+                            "우리 세대한테 문학이라는 걸 되찾아 주고 싶다고 할까요? 충분히 슬퍼할 수 있도록요..."
+                            <br><br>
+                            "찬란히 빛나는 별들은 우리의 아주 작은 발광조차 허락하지 않았다."
+                            <br><br>
+                            "희망하는 것과 무작정 믿는 건 비슷하지만 달라. 믿는 건 어떻게든 버티기 위해서 하는 일이지만, 희망하는 건 매일 조금이라도 나아가기 위해 하는거야."
+                            <br>
+                            <span class="close">접기</span>
+                        </p><br>
+                        <div class="btnbox">
+                            <button class="like"><img src="img/like.png" alt=""> 0</button>
+                            <button class="reply">댓글 0</button>
+                        </div>
+                        <br>
+                        <hr>
+                    </div>
+                        <div class="rv">
+                            <h4>새로운 경험이 가득한 책</h4>
+                            <p>내용&nbsp; <img src="img/score5.png" alt="">&nbsp;&nbsp; 편집/디자인&nbsp; <img src="img/score5.png" alt="">&nbsp;&nbsp; | &nbsp;&nbsp;<span>R***N</span>&nbsp;&nbsp; | &nbsp;&nbsp;2020-03-30</p>
+                            <br>
+                            <p class="rvtext2">
+                                이묵돌 작가의 책은 역마 - 사랑하기 좋은 계절에 - 시간과 장의사로 이어진다. 세 책은 서로 주제도, 장르도, 심지어 두께도 다르지만 (시간과 장의사가 확연히 두껍고 역마가 가장 얇다) 같은 작가의 책으로서 몇 가지 특성을 공유한다.<br>
+                                그 중 하나는 일상적인 소재로부터 생각해 볼 거리를 제공한다는 점이다. 시간과 장의사의 경우 작가의 실제 여행기를 담은 역마나 실제 연애담을 다룬 사랑하기 좋은 계절에 와는 달리 짧은 소설로 이루어진 책이지만, 다른 두 책과 마찬가지로 충분히 있음직한 내용을 다루고 있다. 그래서 생각해 볼 거리를 제공한다는 것의 의미는 철학적인 주제를 다룬다는 것과는 거리가 멀다. 대신 내 주변 사람에 대해 생각해보거나, 과거의 자신을 객관적인 관점에서 관찰하는 것과 같은 경험을 통해 이후의 인간관계에 대한 고민, 내가 어떻게 살아야 하는가에 대한 고민이 자연스럽게 이루어진다. (써놓고 보니 충분히 철학적인 것 같기도 하다.)
+                                <span class="open">더보기</span><br>
+                                중고등학교 국어 과목에서는 독자가 소설을 통해 간접경험을 할 수 있다고 하는데, 그 표현을 빌리면 이묵돌 작가의 책에서는 인간관계에 대한 많은 간접경험을 얻을 수 있다. 실제 인간관계를 통해서만 배울 수 있는 것들도 있지만 모든 것을 실제 인간관계를 통해 배우기에 현대에서 새로운 관계를 형성하고 유지하는 일은 지나치게 많은 에너지를 필요로 한다. 또한 충분한 경험이 없이는 실패할 가능성이 높은 관계들도 존재하는데, 그러한 관계에서의 실패를 다음 관계의 거름 삼아 쿨하게 떠나보내기란 쉬운 일이 아니다. 이러한 점을 종합적으로 고려할 때 이 책은 자신의 경험을 확장하는 의미에서라도 충분히 읽을 가치가 있다고 생각된다.<br>
+                                물론 어떠한 대상의 가치는 그것의 실용적 가치로서만 평가되어야 하는 것은 아니고, 애초에 소설이라는 장르가 일반적으로 실용서적으로 분류되지도 않는다. 하지만 반대로 이 책의 실용적 가치가 다른 가치를 절하하는 것 역시 아니다. 그렇다면 일반적인 소설로서의 가치에 더해 실용적 가치를 찾을 수 있다는 점은 이 책만의 색다른 매력이 될 수 있지 않을까? 그리고 물론 이 책은 흥미 측면에서나 독자의 공감을 이끌어내는 측면에서나 소설의 일반적인 평가 기준에서도 충분히 매력적인 책이다.
+                                <br>
+                                <span class="close">접기</span>
+                            </p><br>
+                            <div class="btnbox">
+                                <button class="like"><img src="img/like.png" alt=""> 0</button>
+                                <button class="reply">댓글 0</button>
+                            </div>
+                            <br>
+                            <hr>
+                        </div>
+                        <div class="rv">
+                            <h4>슬픔으로 행복을 노래하다</h4>
+                            <p>내용&nbsp; <img src="img/score5.png" alt="">&nbsp;&nbsp; 편집/디자인&nbsp; <img src="img/score5.png" alt="">&nbsp;&nbsp; | &nbsp;&nbsp;<span>t****g</span>&nbsp;&nbsp; | &nbsp;&nbsp;2020-03-29</p>
+                            <br>
+                            <p class="rvtext3">
+                                이묵돌. 전직 리뷰왕 김리뷰. 나는 그를 '슬픔으로 행복을 노래하는 작가'라 칭하고 싶다.
+                                <br><br>
+                                그는 신작 단편집 <시간과 장의사>에서 '행복하지 않으면 안 된다'는 이 시대의 강박 앞에 쓸쓸함, 씁쓸함, 슬픔, 아픔, 상실이라는 여러 감정들을 덤덤하게 써내려간다. 행복 하나만을 빼고. 마치 행복을 쓰면 안 된다는 강박이 있는 것처럼 보일 정도로 행복 반대편에 있다고 생각되는 감정들을 깊이 있는 문장들을 통해 하나하나 건드린다. 흡입력 있는 문장들을 읽다보면 불행의 모습들이 이렇게나 많구나 싶다. 아니 행복이 이렇게나 멀리 있구나 싶은 것이다.
+                                <br><br>
+                                그런데 그의 글을 계속 읽다보니 문득 그런 생각이 들었다. 그가 행복을 노래했을 수도 있겠다는 그런 착각. 맞다. 그건 착각이다. 여러 번의 자살시도 경력이 있는 그 자신에게 물어봐도 'ㅇㅇ 그건 착각임'이라 말할 바로 그 생각. 왜 그런 생각이 들었던 것일까?
+                                <span class="open">더보기</span>
+                                <br><br>
+                                언어. 삶을 살아가는데 큰 도움을 주는 그것. 우리는 언어 덕분에 생각을 표현할 수 있고 다른 사람과 소통할 수 있다. 그만큼 언어는 우리와 세상을 담는 소중한 그릇인 셈이다. 하지만 그릇이라는 본질 때문에 필연적으로 일부분 밖에 담을 수 없다. 그러니까 다시 말하자면 언어에는 오해가 담길 수밖에 없다는 뜻이다. 행복이란 단어도 마찬가지다. 분명 긍정적인 뜻으로 사용되고 있지만 '행복 이외의 감정은 불행'이라는 오해를 만들기도 하는 대표명사이기도 하다. 특히 행복은 비교로부터 나오는 경우가 많기에 SNS 등으로 접근성이 높아진 지금 현대사회에서, 행복은 점점 기준 허들이 높아지고 있다. 그 말을 반대로 말하면 불행의 기준은 점차 낮아지고 있다는 것이다. 상대의 행복에 집중하다보니 나 스스로는 불행해졌던 경험. 다들 한 번씩은 있지 않나.
+                                <br><br>
+                                이묵돌의 책에서는 행복 이외의 감정일 뿐이었던 불행이 전면으로 나온다. 게다가 불행이라는 단어로 뭉뚱그려 있었던 다양한 감정들이 쓸쓸함, 씁쓸함, 슬픔, 아픔, 상실이라는 본연의 이름을 만나 우리 마음속으로 들어온다. (우리가 김춘수의 시 '꽃'을 괜히 좋아하는 게 아니다.) 이렇게 불행의 수많은 감정들을 마주하다보면 '불행 이외의 감정은 행복'이라는 생각이 든다. 이로서 행복의 저변은 확장된다. 행복을 단 한 번도 언급하지 않았음에도 불구하고. 그동안 행복이 집착했기에 불행했고, 불행을 마주했기에 행복해졌다는 아이러니가 성립하게 되는 순간이다.
+                                <br><br>
+                                아마 묵돌은 이렇게 생각할 것이다. 'ㅇㅇ 그건 착각임' 그래도 어찌할 것인가. 원래 문학은 작가가 만들어냈지만 완성된 이후에는 그것 스스로의 삶을 살아가는 것을. 나는 <시간과 장의사>를 만나 슬픔으로도 행복을 노래할 수 있구나 라는 생각이 들었다. 아마 다른 사람들은 이 책을 통해 또 다른 감정을 느낄 것이다. 슬픔에 한없이 침잠될 수도 있고, 남몰래 눈물 흘리고는 괜히 후련해질 수도 있다. 별 느낌 안 드는 사람이 있을 수도 있고.(묵돌 미안)
+                                <br><br>
+                                책장 한가득 이묵돌의 책으로 가득차기를 기원한다. 편집자님, 이묵돌 감금 부탁드립니다.
+                                <br>
+                                <span class="close">접기</span>
+                            </p><br>
+                            <div class="btnbox">
+                                <button class="like"><img src="img/like.png" alt=""> 0</button>
+                                <button class="reply">댓글 0</button>
+                            </div>
+                            <br>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div id="shipping">
+            <div id="shippingwrap">
+                <h3>배송/반품/교환 안내</h3>
+                <h4>배송 안내</h4>
+                <table>
+                    <tr>
+                        <th>배송 구분</th>
+                        <td>
+                            <p>예스24 배송</p>
+                            <p>배송비 : 무료배송</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>포장 안내</th>
+                        <td>
+                            <p><b>안전하고 정확한 포장을 위해 CCTV를 설치하여 운영하고 있습니다.</b></p>
+                            <p>고객님께 배송되는 모든 상품을 CCTV로 녹화하고 있으며, 철저한 모니터링을 통해 작업 과정에 문제가 없도록 최선을 다 하겠습니다.</p>
+                            <p>목적 : 안전한 포장 관리</p>
+                            <p>촬영범위 : 박스 포장 작업</p>
+                            <div>
+                                <img src="img/thumb_deli01.jpg" alt="">
+                                <img src="img/thumb_deli02.jpg" alt="">
+                                <img src="img/thumb_deli03.jpg" alt="">
+                                <img src="img/thumb_deli04.jpg" alt="">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <h4>반품/교환 안내</h4>
+                <p>※ 상품 설명에 반품/교환과 관련한 안내가 있는경우 아래 내용보다 우선합니다. (업체 사정에 따라 달라질 수 있습니다)</p><br>
+                <table>
+                    <tr>
+                        <th>반품/교환 방법</th>
+                        <td>
+                            <p>마이페이지 > 반품/교환 신청 및 조회, 1:1 문의, 고객만족센터(1544-3800), 중고샵(1566-4295)</p>
+                            <p>판매자 배송 상품은 판매자와 반품/교환이 협의된 상품에 한해 가능합니다.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>반품/교환 가능기간</th>
+                        <td>
+                            <p>출고 완료 후 10일 이내의 주문 상품</p>
+                            <p>디지털 콘텐츠인 eBook의 경우 구매 후 7일 이내의 상품</p>
+                            <p>중고상품의 경우 출고 완료일로부터 6일 이내의 상품 (구매확정 전 상태)</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>반품/교환 비용</th>
+                        <td>
+                            <p>고객의 단순변심 및 착오구매일 경우 상품 반송비용은 고객 부담임</p>
+                            <p>직수입양서/직수입일서중 일부는 변심 또는 착오로 취소시 해외주문취소수수료 20%를 부과할수 있음</p>
+                            <p>&nbsp;단, 아래의 주문/취소 조건인 경우, 취소 수수료 면제</p>
+                            <p>&nbsp;-오늘 00시 ~ 06시 30분 주문을 오늘 오전 06시 30분 이전에 취소</p>
+                            <p>&nbsp;-오늘 06시 30분 이후 주문을 익일 오전 06시 30분 이전에 취소</p>
+                            <p>직수입 음반/영상물/기프트 중 일부는 변심 또는 착오로 취소 시 해외주문취소수수료 30%를 부과할 수 있음</p>
+                            <p>&nbsp;단, 당일 00시~13시 사이의 주문은 취소 수수료 면제</p>
+                            <p>박스 포장은 택배 배송이 가능한 규격과 무게를 준수하며, 고객의 단순변심 및 착오구매일 경우 상품의 반송비용은 박스 당 부과됩니다.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>반품/교환 불가사유</th>
+                        <td>
+                            <p>소비자의 책임 있는 사유로 상품 등이 손실 또는 훼손된 경우</p>
+                            <p>소비자의 사용, 포장 개봉에 의해 상품 등의 가치가 현저히 감소한 경우 : 예) 화장품, 식품, 가전제품, 전자책 단말기 등</p>
+                            <p>복제가 가능한 상품 등의 포장을 훼손한 경우 : 예) CD/LP, DVD/Blu-ray, 소프트웨어, 만화책, 잡지, 영상 화보집</p>
+                            <p>소비자의 요청에 따라 개별적으로 주문 제작되는 상품의 경우</p>
+                            <p><b>디지털 컨텐츠인 eBook, 오디오북 등을 1회 이상 다운로드를 받았을 경우</b></p>
+                            <p>eBook 대여 상품은 대여 기간이 종료 되거나, 2회 이상 대여 했을 경우 취소 불가</p>
+                            <p>중고상품이 구매확정(자동 구매확정은 출고완료일로부터 7일)된 경우</p>
+                            <p>LP상품의 재생 불량 원인이 기기의 사양 및 문제인 경우 (All-in-One 일체형 일부 보급형 오디오 모델 사용 등)</p>
+                            <p>시간의 경과에 의해 재판매가 곤란한 정도로 가치가 현저히 감소한 경우</p>
+                            <p>전자상거래 등에서의 소비자보호에 관한 법률이 정하는 소비자 청약철회 제한 내용에 해당되는 경우</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>소비자 피해보상</th>
+                        <td><p>상품의 불량에 의한 반품, 교환, A/S, 환불, 품질보증 및 피해보상 등에 관한 사항은 소비자분쟁해결기준(공정거래위원회 고시)에 준하여 처리됨</p></td>
+                    </tr>
+                    <tr>
+                        <th>환불 지연에 따른 배상</th>
+                        <td><p>대금 환불 및 환불 지연에 따른 배상금 지급 조건, 절차 등은 전자상거래 등에서의 소비자 보호에 관한 법률에 따라 처리</p></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="footertop">
+            <div id="footertopwrap">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">인재채용</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">청소년보호정책</a></li>
+                    <li><a href="#">도서홍보안내</a></li>
+                    <li><a href="#">광고안내</a></li>
+                    <li><a href="#">제휴안내</a></li>
+                    <li><a href="#">복지제휴</a></li>
+                    <li><a href="#">매장안내</a></li>
+                </ul>
+                <div id="sns">
+                    <a href="#"><img src="img/ka.png" alt=""></a>
+                    <a href="#"><img src="img/fb.png" alt=""></a>
+                    <a href="#"><img src="img/tw.png" alt=""></a>
+                    <a href="#"><img src="img/ig.png" alt=""></a>
+                </div>
+                <img src="img/asdf.png" alt="" class="asdf">
+            </div>
+        </div>
+        <div id="footerbot">
+            <div id="footerbotwrap">
+                <div id="footerbot1">
+                    <img src="img/footlogo.png" alt="">
+                    <div id="bot1box1">
+                        <img src="img/company.png" alt="">
+                        <p>서울시 영등포구 은행로 11, 5~6층(여의도동, 일신빌딩)</p>
+                        <p>대표 : 김석환, 최세라 &nbsp;&nbsp; 개인정보보호책임자 : 권민석 yes24help@yes24.com</p>
+                        <p>사업자등록번호 : 229-81-37000 &nbsp;&nbsp; 통신판매업신고 : 제 2005-02682호 &nbsp;&nbsp; <span><a href="#">사업자 정보확인 &gt;</a></span></p>
+                        <p>호스팅 서비스사업자 : 예스이십사(주)</p>
+                        <p>Copyright ⓒ YES24 Corp. All Rights Reserved.</p>
+                    </div>
+                    <div id="bot1box2">
+                        <h4>고객문의</h4>
+                        <p>도서/음반 &nbsp;<span>1544-3800</span> &nbsp;&nbsp; 중고샵 &nbsp;<span>1566-4295</span></p>
+                        <p>티켓예매 &nbsp;&nbsp;<span>1544-6399</span> &nbsp;&nbsp; <a href="#">eBook 1:1 문의></a></p>
+                    </div>
+                </div>
+                <div id="footerbot2">
+                    <img src="img/glory.gif" alt="">
+                </div>
+                <div id="footerbot3">
+                    <span>소비자피해보상보험</span>&nbsp;
+                    <img src="img/sgi.png" alt="">&nbsp;
+                    <p>고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한 구매안전서비스를 이용하실 수 있습니다.</p>&nbsp;
+                    <a href="#">서비스가입사실 확인&gt;</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/common.js"></script>
+    <script src="js/sub.js"></script>
+</body>
+</html>
